@@ -1,0 +1,77 @@
+.header {
+    margin-top: 44px;
+
+    &__holder {
+        @include flex;
+        width: 100%;
+    }
+
+    &__left img {
+        @include logo;
+    }
+
+    &__right .hamburger-button {
+        display: none;
+    }
+
+    &__right .links {
+        @include flex;
+
+        .link a {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 15px;
+            letter-spacing: 0.923077px;
+            text-transform: uppercase;
+            color: #83888F;
+
+            &:hover {
+                color: #333D4B;
+            }
+
+        }
+    }
+
+    &>.hero {
+        background-image: url("../images/png/hero-banner.png");
+        width: 100%;
+        background-size: 1140px 600px;
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        height: 515px;
+        margin-top: 45px;
+        padding-top: 85px;
+
+        &>.hero__content {
+            width: 38%;
+            margin-left: 85px;
+
+            h2 {
+                font-family: 'Fraunces', serif;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 63px;
+                line-height: 72px;
+                color: #FEFCF7;
+            }
+
+            p {
+                margin-top: 32px;
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                color: #FEFCF7;
+                mix-blend-mode: normal;
+                opacity: 0.8;
+            }
+
+            .btn {
+                @include btn;
+                margin-top: 56px;
+            }
+        }
+    }
+
+}

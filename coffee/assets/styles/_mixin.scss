@@ -1,0 +1,30 @@
+@mixin btn {
+    font-family: 'Fraunces', serif !important;
+    background: #0E8784;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    color: #FEFCF7;
+    border: transparent;
+    cursor: pointer;
+    padding: 16px 31px;
+
+    &:hover {
+        background: #66D2CF;
+    }
+}
+
+@mixin flex ($jusContent: space-between, $a-item: center, $gap: 33px) {
+    display: flex;
+    justify-content: $jusContent;
+    align-items: $a-item;
+    gap: $gap;
+}
+
+@mixin logo {
+    width: 235px;
+    height: 25px;
+}

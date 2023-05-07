@@ -1,0 +1,48 @@
+.footer {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    background: #000000;
+    padding: 38px 85px;
+    box-sizing: border-box;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        align-items: center;
+
+        .logo img {
+            @include logo;
+            width: 203px;
+            padding: 0;
+        }
+
+        .list {
+            .links {
+                @include flex($gap: 14px, $jusContent: flex-start);
+                padding: 0;
+
+                a {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 10px;
+                    line-height: 15px;
+                    letter-spacing: 0.923077px;
+                    text-transform: uppercase;
+                    color: #83888F;
+                }
+            }
+        }
+
+        .icons {
+            grid-column: 3/5;
+
+            ul {
+                @include flex($gap: 24px, $jusContent: flex-end);
+
+                a:hover img {
+                    background: #FDD6BA;
+                }
+            }
+        }
+    }
+}
